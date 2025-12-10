@@ -1,0 +1,27 @@
+:root {
+  /* Primary Gold / Dark Palette */
+  --ifm-color-primary: #f5a623;         /* gold main */
+  --ifm-color-primary-dark: #e09b1a;    /* darker gold */
+  --ifm-color-primary-darker: #c47f15;  /* even darker gold */
+  --ifm-color-primary-darkest: #a66a12; /* deepest gold */
+  --ifm-color-primary-light: #fff5cc;   /* light gold / off-white */
+  --ifm-color-primary-lighter: #fff8e1; /* lighter gold */
+  --ifm-color-primary-lightest: #fffbe6;/* very light gold */
+
+  /* Code styling */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(245, 166, 35, 0.1); /* subtle gold highlight */
+}
+
+/* Dark Mode Palette */
+[data-theme='dark'] {
+  --ifm-color-primary: #f5a623;         /* gold on dark background */
+  --ifm-color-primary-dark: #e09b1a;    
+  --ifm-color-primary-darker: #c47f15;  
+  --ifm-color-primary-darkest: #a66a12; 
+  --ifm-color-primary-light: #fff5cc;   
+  --ifm-color-primary-lighter: #fff8e1; 
+  --ifm-color-primary-lightest: #fffbe6;
+
+  --docusaurus-highlighted-code-line-bg: rgba(245, 166, 35, 0.15); /* subtle gold highlight */
+}

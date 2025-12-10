@@ -1,0 +1,64 @@
+/* Section background */
+.section {
+  padding: 60px 0;
+  background: #111; /* pure black background */
+  color: #fff;
+}
+
+/* Card styles */
+.card {
+  background: rgba(255, 255, 255, 0.05); /* subtle translucent card */
+  border-radius: 18px;
+  padding: 28px 22px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
+}
+
+/* Icon wrapper */
+.iconWrapper {
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #222; /* dark grey circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Icon color */
+.icon {
+  font-size: 34px;
+  color: #f5a623; /* accent gold/orange color */
+}
+
+/* Titles */
+.title {
+  font-weight: 600 !important;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+/* Descriptions */
+.description {
+  font-size: 0.95rem;
+  color: #ccc; /* lighter grey for readability */
+}
+
+/* Optional: Card hover icon effect */
+.card:hover .iconWrapper {
+  background: #333; /* slightly lighter grey */
+  transform: scale(1.1);
+}
