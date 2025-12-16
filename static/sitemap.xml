@@ -1,19 +1,4 @@
-<!-- <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <chapters>
-    <chapter title="Course Overview: Physical AI and Humanoid Robotics" />
-    <chapter title="Advanced Simulation: Unity and Omniverse" />
-    <chapter title="Capstone: Autonomous Humanoid Systems" />
-    <chapter title="Humanoid Locomotion and Control" />
-    <chapter title="NVIDIA Isaac Platform" />
-    <chapter title="Vision-Language-Action Systems" />
-    <chapter title="Foundations of Physical AI" />
-    <chapter title="Humanoid Sensors Overview" />
-    <chapter title="Introduction to Physical AI and Humanoid Robotics" />
-    <chapter title="ROS 2 Fundamentals" />
-    <chapter title="Simulation Basics: Gazebo and Unity" />
-  </chapters>
-</configuration> -->
+
 
 
 <?xml version="1.0" encoding="UTF-8"?>
