@@ -135,29 +135,22 @@
 
 
 
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'Essentials of Physical AI and Humanoid Robotics',
-  favicon: 'img/logo.png',
+  favicon: 'img/robot.png',
 
-  // Future flags for Docusaurus v4 compatibility
   future: {
     v4: true,
   },
 
-  // ⭐ Correct Production URL
   url: 'https://ai-textbook-six.vercel.app',
-
-  // Base URL
   baseUrl: '/',
 
-  // High SEO preference
   trailingSlash: false,
 
   organizationName: 'zarinext',
@@ -171,14 +164,6 @@ const config: Config = {
     locales: ['en'],
   },
 
-  // ⭐ Sitemap Configuration Added
-  sitemap: {
-    changefreq: 'weekly',
-    priority: 0.8,
-    ignorePatterns: ['/tags/**'],
-    filename: 'sitemap.xml',
-  },
-
   presets: [
     [
       'classic',
@@ -188,20 +173,27 @@ const config: Config = {
           editUrl:
             'https://github.com/zarinext/ai-native-book/tree/main/docusurus-site/',
         },
+
         blog: {
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
+
         theme: {
           customCss: './src/css/custom.css',
+        },
+
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.8,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
         },
       } satisfies Preset.Options,
     ],
@@ -218,8 +210,9 @@ const config: Config = {
       title: 'Physical AI & Humanoid Robotics',
       logo: {
         alt: 'Physical AI & Humanoid Robotics Logo',
-        src: 'img/logo.png',
+        src: 'img/robot.png',
       },
+      style: 'dark', // using dark mode as base
       items: [
         {
           type: 'docSidebar',
@@ -232,6 +225,7 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+       
       ],
     },
 
@@ -252,7 +246,8 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/ZARMAIN-AHMED/Physical-AI---Humanoid-Robotics-Course',
+              href:
+                'https://github.com/ZARMAIN-AHMED/Physical-AI---Humanoid-Robotics-Course',
             },
           ],
         },
@@ -264,8 +259,19 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+
+    // Golden navbar colors
+    navbarStyle: {
+      backgroundColor: 'linear-gradient(135deg, #d4af37, #f5e7a1, #d4af37)',
+      color: '#111', // dark text on gold
+      itemHoverBackground: '#f5e7a1',
+      itemHoverColor: '#111',
+    },
   } satisfies Preset.ThemeConfig,
+
+  
 };
 
 export default config;
+
 
