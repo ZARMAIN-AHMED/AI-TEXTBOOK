@@ -261,12 +261,7 @@ const config: Config = {
     },
 
     // Golden navbar colors
-    navbarStyle: {
-      backgroundColor: 'linear-gradient(135deg, #d4af37, #f5e7a1, #d4af37)',
-      color: '#111', // dark text on gold
-      itemHoverBackground: '#f5e7a1',
-      itemHoverColor: '#111',
-    },
+   
   } satisfies Preset.ThemeConfig,
 
   
